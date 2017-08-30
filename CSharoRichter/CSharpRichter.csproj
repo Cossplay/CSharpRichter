@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter4Types\CastingTypes\Casting.cs" />
+    <Compile Include="Chapter4Types\Heap\Heap.cs" />
     <Compile Include="Chapter4Types\OperatorNew\Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

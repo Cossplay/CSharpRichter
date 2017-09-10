@@ -33,7 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharoRichter.Chapter4Types.CastingTypes.Casting</StartupObject>
+    <StartupObject>CSharoRichter.Chapter5RefValueTypes.BoxUnboxValueTypes.BoxUnbox</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +52,8 @@
     <Compile Include="Chapter4Types\CastingTypes\Casting.cs" />
     <Compile Include="Chapter4Types\Heap\Heap.cs" />
     <Compile Include="Chapter4Types\OperatorNew\Employee.cs" />
+    <Compile Include="Chapter5RefValueTypes\BoxUnboxValueTypes\BoxUnbox.cs" />
+    <Compile Include="Chapter5RefValueTypes\Checked\Checked.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

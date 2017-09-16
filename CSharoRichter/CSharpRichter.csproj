@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharoRichter.Chapter5RefValueTypes.BoxUnboxValueTypes.BoxUnbox</StartupObject>
+    <StartupObject>CSharoRichter.Chapter5RefValueTypes.ChangeFieldsInBoxedValueTypes.Example</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -53,6 +53,8 @@
     <Compile Include="Chapter4Types\Heap\Heap.cs" />
     <Compile Include="Chapter4Types\OperatorNew\Employee.cs" />
     <Compile Include="Chapter5RefValueTypes\BoxUnboxValueTypes\BoxUnbox.cs" />
+    <Compile Include="Chapter5RefValueTypes\BoxUnboxValueTypes\Main.cs" />
+    <Compile Include="Chapter5RefValueTypes\ChangeFieldsInBoxedValueTypes\Example.cs" />
     <Compile Include="Chapter5RefValueTypes\Checked\Checked.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

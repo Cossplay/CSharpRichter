@@ -48,7 +48,7 @@ namespace CSharoRichter.Chapter5RefValueTypes.BoxUnboxValueTypes
         }
 
         #region Структура Point
-        struct Point
+        public struct Point : IComparable
         {
             public int x;
             public int y;
@@ -57,6 +57,22 @@ namespace CSharoRichter.Chapter5RefValueTypes.BoxUnboxValueTypes
                 this.x = _x;
                 this.y = _y;
             }
+
+            public int CompareTo(object o)
+            {
+                // Реализация compareTo от Интерфейса IComparable 
+                if (GetType() != o.GetType())
+                    throw new ArgumentException("o isnt a Point");
+                return CompareTo((Point)o);
+            }
+
+            // собственный compareTo
+            public int CompareTo(Point other)
+            {
+                return Math.Sign(Math.Sqrt(x * x + y * y) - Math.Sqrt(other.x * other.x + other.y * other.y));
+            }
+
+            // Переопределенный ToString
             public override string ToString()
             {
                 return String.Format("{0}, {1}", x, y);
